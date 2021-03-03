@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: hsl(243, 100%, 93%);
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/bg-desktop.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        background-position: initial;
+        background-repeat: round;
+        overflow: hidden;
+    }
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    position: relative;
+    top: 30vh;
+    margin: 0 auto;
+    width: 1200px;
+    height: 300px;
+}
+
+/* Fylo Design */
+
+.fylo_design {
+    width: 40%;
+    height: 100%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 200px 10px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+}
+
+/* Logo and Icons */
+
+.logo_and_icons {
+    position: relative;
+    margin-left: 50px;
+    top: 25%;
+    height: 50%;
+    width: 60%;
+}
+
+.icons {
+    margin-top: 60px;
+    display: flex;
+}
+
+.icon-slot {
+    height: 50px;
+    width: 50px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.file-icon {
+    margin: 13px 15px;
+}
+
+.folder-icon {
+    margin: 15px 13px;
+}
+
+.upload-icon {
+    margin: 17px 13px;
+}
+
+/* Data Storage */
+
+.data_storage {
+    position: relative;
+    top: 20%;
+    margin-left: 50px;
+    width: 60%;
+    height: 80%;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+}
+
+/* Data Container */
+
+.data-container {
+    position: relative;
+    margin: 70px auto;
+    width: 85%;
+    height: 60%;
+}
+
+/* Progression bar */
+
+.bar {
+    margin: 30px auto 10px;
+    background: hsl(229, 57%, 11%);
+    display: block;
+    height: 15px;
+    border: 2px solid  hsl(229, 57%, 11%);
+    border-radius: 15px;
+}
+
+.progress {
+    height: 15px;
+    border-radius: 15px;
+    float: left;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 81.5%;
+}
+
+.ball {
+    float: right;
+    margin: 2px;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Data info */
+
+.data-info {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
+
+.end-text {
+    position: absolute;
+    right: 0;
+}
+
+.gb_left {
+    position: absolute;
+    right: 50px;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px 15px 0 15px;
+}
+
+.gb_left::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    border-width: 0 40px 40px 0;
+    border-style: solid;
+    border-color: transparent white;
+}
+
+.gb_left p {
+    position: relative;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.gb_left_info {
+    color: hsl(229, 57%, 11%);
+    font-size: 60px;
+}
+
+.gb_left_info2 {
+    position: relative;
+    top: -10px;
+    color: hsl(229, 7%, 55%);
+}
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+        background-position: initial;
+        background-repeat: round;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 350px;
+        height: 500px;
+        top: 15vh;
+        flex-direction: column;
+    }
+
+    .fylo_design {
+        width: 100%;
+        height: 50%;
+        border-radius: 10px 100px 10px 10px;
+    }
+
+    .data_storage {
+        top: 5%;
+        margin-left: 0;
+        width: 100%;
+        height: 40%;
+    }
+
+    .data-container {
+        margin: 30px auto;
+        width: 85%;
+        height: 60%;
+        text-align: center;
+    }
+
+    .gb_left {
+        position: relative;
+        right: unset;
+        margin: 0 auto;
+        height: 100px;
+        width: 200px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    .gb_left::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent white;
+    }
+}
+
+/* footer */
+
+.attribution {
+    font-size:
+    11px;
+    text-align:
+    center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
